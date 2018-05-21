@@ -1,1 +1,19 @@
 theme: minima
+exclude: [".idea", "infra", "vendor"]
+
+title: "Konrad M. Otrębski"
+description: ""
+timezone: "UTC"
+
+#below is "minima" theme customization
+
+header_pages:
+  - about.md
+
+minima:
+  date_format: "%Y-%m-%d %H:%M %Z"
+
+show_excerpts: true
+
+github_username: kmotrebski
+linkedin_username: konradotrebski

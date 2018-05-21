@@ -1,5 +1,6 @@
-# K.M. Otrębski
+---
+title: "Home page"
+list_title: "Latest articles"
+---
 
-Welcome to my blog. It is currently in progress as I am experimenting with GitHub Pages.
-
-First post will be about making easy to test PHP applications inside Docker containers.
+Welcome to my website, I've started it in May 2018. Have a look at articles below and [About me]({{ site.baseurl }}{% link about.md %}) page too! 
