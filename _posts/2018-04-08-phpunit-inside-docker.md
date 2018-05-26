@@ -52,15 +52,15 @@ What I want from the solution is to be super cheap. To be more specific I want i
 
 ## Solutions
 
-   The list of solutions is the following:
+The list of solutions I came up with:
    
-   - type all commands manually in CLI
-    -set up some bash bashrc shortcuts/abbreviations e.g. d for running "docker exec -it tests bash -c"
-   - setting up tests in PhpStorm IDE so that it runs tests inside Docker containers
-   - write your own helper - my choice
-   
-  Let me elaborate on each of the above and explain why I've choosen to write simple helper.
-  
+- type all commands manually in console
+- set up a terminal alias
+- set up tests in PhpStorm or whatever your IDE is so that it runs tests inside Docker containers
+- write your own helper - **my choice**
+
+Let me elaborate on each of the above and explain why I've choosen to write simple helper.
+
 ### Typing commands manually
 
 Let's have a look at what you would have to type in the console if you would like to do it manually. This way we will see what we can automate:
@@ -77,10 +77,10 @@ docker run --rm \
 
 It takes simply a minute to write all of these assuming that you remember everything including the path to the test file or have it copied. Apart form being time consuming and demotivating it's wastes one of the most significant resource in your life - number of keystrokes you are going to press during your lifetime.
   
-  ### Terminal shortcuts
-  
-  You can create terminal alias in `~/.bashrc` so e.g. to type `unittests` and it will replace everything apart from test case file. This way you will simply type:
-  
+### Terminal alias
+
+You can create terminal alias in `~/.bashrc` so e.g. to type `unittests` and it will replace everything apart from test case file. This way you will simply type:
+
 {% highlight shell %}
 unittests tests/php/Unit/Controllers/IndexControllerTest.php
 {% endhighlight %}
@@ -92,7 +92,7 @@ unittests tests/php/Unit/Controllers/IndexControllerTest.php
   - it does not automatically gets propagated to other developers machines
   - you will have to have many of them in case you work with many projects or have many test suites (e.g. integration tests) 
   
- ### Set up to run tests from IDE
+### Set up tests in IDE
  
 Next level of automation is to set up all tests to be run directly from IDE, in this case PhpStorm.
 
@@ -108,7 +108,7 @@ Disadvantages:
 - IDE as additional intermediary between developer and a system under test
 
 
-### Own bash helper script - my choice
+### Own helper script - my choice
 
 The solution I've decided for is to write simple helper script. 
 
@@ -166,7 +166,7 @@ I've choosen this solutions because it satisfies all my criteria listed above:
 - antifragile - it's checked in source control and sits in main directory, I don't have to set up anything. No IDE configuration or updating `~/bashrc` files.
 - consistent - works same way on all developers machines and any changes gets automatically propagated
 
-### Script
+## How it works
 
 The file is located [here](https://github.com/kmotrebski/blog-art-20180408/blob/master/tests.sh) and looks like that:
 
@@ -257,7 +257,7 @@ fi
 {% endhighlight %}
 Container is killed if developer wanted to run all the tests (he has not passed a path so `$1` is empty). If there was some path passed in CLI then I don't want to kill it as I probably will be running it again and I want to save this halfes of second. It will be automatically killed when you switch off computer becasue I used `--rm` flag when starting.
  
-# Final thoughts
+## Final thoughts
 
 This is the solution that works for me. Check it out, play, reflect on it and feed back!
 
@@ -271,7 +271,7 @@ Also be aware that:
 - I've tested it on Linux Ubuntu 16.04 and Docker `17.05.0-ce` (API `1.29`)
 - If you would like to run PHPUnit with code coverage report then change image version from `dev` to `debug`.
 
-# Feedback me
+### Feedback me
 
 All forms of feedback and challanging this solutions are highly appreciated. I treat this blog as a form of challange for me and an opportunity to grow and learn. 
 
