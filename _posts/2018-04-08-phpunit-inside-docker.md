@@ -141,7 +141,7 @@ If you start the script without specifying a path to be tested:
 ./tests.sh
 {% endhighlight %}
 
-Than all tests will be run and the container will be killed at the end.
+Then all tests will be run and the container will be killed at the end.
 
 {% highlight shell %}
 PHPUnit 5.7.27 by Sebastian Bergmann and contributors.
@@ -158,7 +158,7 @@ Simple as that! See code snippet and comments below to check how it works.
 
 #### Pros and cons
 
-I've chosen this solution because it satisfies all my criteria listed above:
+I've chosen this solution because it satisfies all my criteria listed above. To reiterate:
 
 - **simple** - can show it to the very beginner and it's 100% clear what happens
 - **flexible** - can run whole test suite, subdirectory or single class
@@ -263,7 +263,7 @@ This is the solution that works for me very well. Check it out, play, reflect on
 
 It's important to note that this solution covers [unit tests](https://martinfowler.com/bliki/UnitTest.html) only. These are expected to have zero interactions with other services like databases so all the execution takes place within completely isolated Docker container running PHP only.
 
-Aparat from unit tests projects usually include suites of integration tests, acceptance tests, end-2-end tests, UI tests (e.g. JavaScript on frontend) etc. Each suite may include PHPUnit XML configuration file, Docker Compose definition, other configuration files etc. With this article I am covering unit tests only but I am expecting that other suites sit in the project too. **What is more I have a plan to cover them it in next posts of my blog!**
+Aparat from unit tests projects usually include suites of integration tests, acceptance tests, end-2-end tests, UI tests (e.g. JavaScript on frontend) etc. Each suite may include PHPUnit XML configuration file, Docker Compose definition, other configuration files etc. With this article I am covering unit tests only but I am expecting that other suites sit in the project too. **What is more I have a plan to cover them in next posts of my blog!**
 
 Also be aware that:
 
