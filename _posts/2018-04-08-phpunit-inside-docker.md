@@ -1,5 +1,5 @@
 ---
-title:  "Decreasing feedback loop down to milliseconds with PHPUnit inside Docker"
+title:  "Decreasing unit tests feedback loop down to milliseconds with PHPUnit inside Docker"
 date:   2018-05-26 12:00:00 +0200
 excerpt_separator: <!--more-->
 ---
@@ -14,7 +14,9 @@ Goal of the article is to present a simple and convenient solution for Test Driv
 
 My ultimate goal while developing is to make the feedback loop as fast and as cheap as possible. The concept of feedback loop in software delivery industry has many levels that you can think of. From high level concepts of effective team communication or A/B experiments to low level components of your delivery pipeline like unit tests. All of these constitutes your process and it has direct impact of how long is your cycle time - one of the best metrics for how robust your organization is.
 
-I like the idea taken from Continuous Delivery approach from the [book of Jez Humble and David Farley](https://www.amazon.com/Continuous-Delivery-Deployment-Automation-Addison-Wesley/dp/0321601912) (highly recommend to everyone to read it). What the authors suggest to measure is a cycle time in the extreme case of introducing single 1 line-of-code change and making it reach users on production. With this post I will cover the unit tests part of the pipeline, specifically while developing.
+I like the idea taken from Continuous Delivery approach from the [book of Jez Humble and David Farley](https://www.amazon.com/Continuous-Delivery-Deployment-Automation-Addison-Wesley/dp/0321601912) (highly recommend to everyone to read it). What the authors suggest to measure is a cycle time in the extreme case of introducing single 1 line-of-code change and making it reach users on production.
+
+With this post I will cover the unit tests part of the pipeline, specifically while doing a day-to-day development.
  
 ### GitHub project
 
