@@ -1,5 +1,5 @@
 ---
-title:  "Decreasing feedback loop down to miliseconds with PHPUnit inside Docker"
+title:  "Decreasing feedback loop down to milliseconds with PHPUnit inside Docker"
 date:   2018-05-26 12:00:00 +0200
 excerpt_separator: <!--more-->
 ---
@@ -8,29 +8,29 @@ Goal of the article is to present a simple and convenient solution for Test Driv
 
 <!--more-->
 
-*DISCLAIMER: This is an "in progress" version of my very first article. Every form of feedback is higly appreciated!*
+*This is an initial version of my very first article. Every form of feedback is highly appreciated!*
 
 ## Fast feedback, cheap feedback
 
-My ultimate goal while developing is to make the feedback loop as fast and as cheap as possible. The concept of feedback loop in software delivery industry has many levels that you can think of. From high level concepts of effective team communication, A/B experiments to low level components of your delivery pipeline like unit tests. All of these constitutes your process and it has direct impact of how long is your cycle time - one of the best metrics for how robust your organization is.
+My ultimate goal while developing is to make the feedback loop as fast and as cheap as possible. The concept of feedback loop in software delivery industry has many levels that you can think of. From high level concepts of effective team communication or A/B experiments to low level components of your delivery pipeline like unit tests. All of these constitutes your process and it has direct impact of how long is your cycle time - one of the best metrics for how robust your organization is.
 
-I like the idea taken from Continuous Delivery approach from the [book of Jez Humble and David Farley](https://www.amazon.com/Continuous-Delivery-Deployment-Automation-Addison-Wesley/dp/0321601912) (highly recommend to everyone to read it). What they suggest to measure is a cycle time in the extreme case of introducing single 1 line-of-code change and making it reach users on production. With this post I will cover the unit tests part of the pipeline, specifically while developing.
+I like the idea taken from Continuous Delivery approach from the [book of Jez Humble and David Farley](https://www.amazon.com/Continuous-Delivery-Deployment-Automation-Addison-Wesley/dp/0321601912) (highly recommend to everyone to read it). What the authors suggest to measure is a cycle time in the extreme case of introducing single 1 line-of-code change and making it reach users on production. With this post I will cover the unit tests part of the pipeline, specifically while developing.
  
 ### GitHub project
 
-I've created an examplatory project on [Github](https://github.com/kmotrebski/blog-art-20180408). It's a simple web service with an endpoint where it displays an "awesome" number - a random integer from 1 to 100.
+I've created an exemplary project on [Github](https://github.com/kmotrebski/blog-art-20180408). It's a simple web service with an endpoint where it displays an "awesome" number - a random integer from 1 to 100.
 
 Feel free to check it out , run it and play with it. You can run it on your laptop with single command! Same for building, both locally and on [Travis](https://travis-ci.org/kmotrebski/blog-art-20180408).
       
 ### Your day
   
-Let's imagine that you want to introduce a change to the system, that will be 1 line long. You want to change range of generated integers from a range of 1-100 to a range of 1-10. Product owner has a hypothesis that this change will dramatically improve UX of your users. Let's do it quickly so that she can validate her idea! :)
+Let's imagine that you want to introduce a change to the system, that will be 1 line long. You want to change range of generated integers from a range of 1-100 to a range of 1-10. Product owner has a hypothesis that this change will dramatically improve UX of your service. Let's do it quickly so that she can validate her idea! :)
   
 I will be following [red-green-refactor](http://blog.cleancoder.com/uncle-bob/2014/12/17/TheCyclesOfTDD.html) cycle of Test Driven Development (TDD). How your day of work is going to look like is:
   
 - update a unit test assertion to expect integers from a range of 1-10 instead of current 1-100, [it's this line](https://github.com/kmotrebski/blog-art-20180408/blob/master/tests/php/Unit/Library/LotteryMachineTest.php#L15)
 - run single test case and see it fails ("red" part of TDD) as an `AwesomeMachine` is still returning higher numbers
-- update the `AwesomeMachine` generator in my case it's [this line](https://github.com/kmotrebski/blog-art-20180408/blob/master/src/Library/AwesomeMachine.php#L16), so that it returns 1 to 10 integers only
+- update the `AwesomeMachine` generator, in my case it's [this line](https://github.com/kmotrebski/blog-art-20180408/blob/master/src/Library/AwesomeMachine.php#L16), so that it returns 1 to 10 integers only
 - run test case again and see it passing ("green" part of TDD)
 - refactor if you see any opportunities for cleaning the code and run the test again
 - run the whole unit test suite so that you are sure you have not broken any parts of the app
@@ -42,7 +42,7 @@ To sum up, in best case scenario when your change doesn't break anything you wan
 
 What I want from the solution is to be super cheap. To be more specific I want it to be:
 
-- **simple** - super easy to understand, to set up and debug, despite level of experience of a developer
+- **simple** - easy to understand, to set up and debug, despite level of experience of a developer
 - **convenient** - cheap to use, not to require lot of effort like typing, clicking or waiting for start up. I can start new day or story quickly and I am not afraid of rebooting computer if needed.
 - **flexible** - allow to run different scope of tests, e.g. to run all tests or single class only
 - **antifragile** - ready immediately after I check out project from source control. This way it does not increase "costs" of such events as: new developer joining a team, short term contractor or interviewee, HDD broken, Linux reinstall or starting same project in different directory. 
@@ -54,7 +54,7 @@ The list of solutions I came up with:
    
 - type all commands manually in console
 - set up a terminal alias
-- set up tests in PhpStorm or whatever your IDE is and run from there
+- set up tests in PhpStorm or whatever your IDE is and run tests from there
 - write your own helper - **my choice**
 
 Let me elaborate on each of the above and explain why I've chosen to write simple helper.
@@ -72,7 +72,7 @@ docker run --rm \
     tests/php/Unit/Controllers/IndexControllerTest.php
 {% endhighlight %}
 
-It takes about a minute to type the above assuming that you remember everything by heart. Apart from being time consuming and demotivating it is also a waste of one of the most significant resources - number of keystrokes you are going to press during your whole life!
+It takes about a minute to type the above assuming that you remember everything by heart. Apart from being time consuming and demotivating it is also a massive waste of one of your most significant resources - number of keystrokes you are going to press during your whole life!
 
 ### Terminal alias
 
@@ -82,7 +82,7 @@ Next level of automation is to create terminal alias in `~/.bashrc` file, e.g. a
 unittests tests/php/Unit/Controllers/IndexControllerTest.php
 {% endhighlight %}
 
-What is more you can use command completion for both `unittests` alias and the test file path. So you can just type the beginnings and use `Tab` key. For sure it satisfies **flexible** and **convenient** requirements from my list of needs.
+What is more you can use command completion for both `unittests` alias and the test file path. So you can just type the beginnings and use `Tab` key. For sure it satisfies **flexible** and **convenient** requirements from my needs list above.
 
 However I find some disadvantages:
 - not **antifragile** - requires effort to set it up when you checkout new project
@@ -95,12 +95,12 @@ What you can do more is to set up all tests to be run directly from IDE (I am us
 
 #### Advantages
 
- - very convenient, you can use keyboard shortcuts
- - you can even make tests to be run automatically with 1 second latency after every change in the code
+ - very convenient, you can use keyboard shortcuts to fire tests
+ - you can even make tests to be run automatically after every change in the code - with 1 second latency 
  
 #### Disadvantages:
 
-- requires lot of effort to set it up, quite complex operation that can go wrong easly
+- requires lot of effort to set it up, relatively complex operation that can go wrong easily
 - because of the above it is also high risk of lot of time spent on maintenance
 - changes does not get propagated automatically to other developers machines
 - different version of IDE, operation system or directory structure can bring "works on my machine" problem, it can cause a setup to fail on one machine and to work on another
@@ -110,7 +110,7 @@ All of the above makes this solution missing many of my initial needs: to be **s
 
 ### Custom helper script - my choice
 
-The solution I've decided for is to write simple helper script in bash that will work similarly to `~/.bashrc` alias but it will me checked into the source control. 
+The solution I've decided for is to write simple helper script in bash that will work similarly to `~/.bashrc` alias but it will be checked into the source control. 
 
 Usage in CLI is following:
 
@@ -139,7 +139,7 @@ If you start the script without specifying a path to be tested:
 ./tests.sh
 {% endhighlight %}
 
-Than all tests will be run and the container will be closed at the end.
+Than all tests will be run and the container will be killed at the end.
 
 {% highlight shell %}
 PHPUnit 5.7.27 by Sebastian Bergmann and contributors.
@@ -156,7 +156,7 @@ Simple as that! See code snippet and comments below to check how it works.
 
 #### Pros and cons
 
-I've chosen this solutions because it satisfies all my criteria listed above:
+I've chosen this solution because it satisfies all my criteria listed above:
 
 - **simple** - can show it to the very beginner and it's 100% clear what happens
 - **flexible** - can run whole test suite, subdirectory or single class
@@ -244,7 +244,7 @@ if [ $DETACHED != "1" ] ; then
 fi
 {% endhighlight %}
 
-It always takes some time to start up new container. In case of my exemplary project it is about 0.5 second. It is observable time so it is better not to kill container all the time but have it running instead. This way you receive your feedback faster. I use `sleep` program to keep container running and `-d` flag to make it background.
+It always takes some time to start up new container. In case of my exemplary project it is about 0.5 second. It is observable time so it is better not to kill container all the time but have it running instead. This way you receive your feedback faster on next runs. I use `sleep` program to keep container running and `-d` flag to make it background.
 
 The last part, just after running tests, is to kill the container if needed:
 
@@ -253,7 +253,7 @@ if [ "$1" == "" ] ; then
     docker kill $(docker ps --filter "name=${CONTAINER_NAME}" -q)
 fi
 {% endhighlight %}
-Container is killed if developer wanted to run all the tests (no path passed so `$1` is empty). If there was a path passed then I don't want to kill the container as I will probably run it one more time and I want to save time. Container will be killed when you switch off computer because of `--rm` flag used at starting a container.
+Container is killed only if developer wanted to run all the tests (no path passed so `$1` is empty). If there was a path passed then I don't want to kill the container as I will probably run it one more time and I want to save time. Container will be killed when you switch off computer because of `--rm` flag used at starting a container.
  
 ## Final thoughts
 
@@ -265,7 +265,7 @@ Aparat from unit tests projects usually include suites of integration tests, acc
 
 Also be aware that:
 
-- This solution is designed for daily development purpose. You probably don't want to use this script to run your tests inside CI/CD tools like Travis. Use single `docker run` command instead. Have a look at my build script [here](https://github.com/kmotrebski/blog-art-20180408/blob/master/build.sh#L28-L35). Same command runs tests locally and in Travis.
+- This solution is designed for daily development purpose. You probably don't want to use this script to run your tests inside CI/CD tools like Travis. Use single `docker run` command instead. Have a look at my build script [here](https://github.com/kmotrebski/blog-art-20180408/blob/master/build.sh#L27-L32). Same command runs tests locally and on Travis.
 - I've tested it on Linux Ubuntu `16.04` and Docker `17.05.0-ce` (API `1.29`)
 - If you would like to run PHPUnit with code coverage report then change image version from `dev` to `debug`.
 
