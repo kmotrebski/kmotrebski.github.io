@@ -48,7 +48,7 @@ What I want from the solution is to be super cheap. To be more specific I want i
 - **convenient** - cheap to use, not to require lot of effort like typing, clicking or waiting for start up. I can start new day or story quickly and I am not afraid of rebooting computer if needed.
 - **flexible** - allow to run different scope of tests, e.g. to run all tests or single class only
 - **antifragile** - ready immediately after I check out project from source control. This way it does not increase "costs" of such events as: new developer joining a team, short term contractor or interviewee, HDD broken, Linux reinstall or starting same project in different directory. 
-- **consistent** - no to deal with "works on my machine" problem. I would like all changes to automatically get propagated to all developers machines and work same way everywhere.
+- **consistent** - not to deal with "works on my machine" problem. I would like all changes to automatically get propagated to all developers machines and work same way everywhere.
 
 ## Solutions
 
@@ -93,7 +93,7 @@ However I find some disadvantages:
 
 ### Set up tests in IDE
  
-What you can do more is to set up all tests to be run directly from IDE (I am using PhpStorm).
+What else you can do is to set up all tests to be run directly from IDE (I am using PhpStorm).
 
 #### Advantages
 
