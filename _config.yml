@@ -5,6 +5,13 @@ title: "Konrad M. Otrębski"
 description: ""
 timezone: "UTC"
 
+#google analytics settings
+
+google_analytics: UA-119949005-1
+url: "https://kmotrebski.github.io"
+plugins:
+  - jekyll-sitemap
+
 #below is "minima" theme customization
 
 header_pages:
