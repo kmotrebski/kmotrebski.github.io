@@ -4,7 +4,7 @@ date:   2018-05-26 12:00:00 +0200
 excerpt_separator: <!--more-->
 ---
 
-Goal of the article is to present a simple and convenient solution for Test Driven Development in PHP inside Docker containers. 
+Goal of the article is to present simple and convenient solution for running PHP unit tests inside Docker containers. It's aimed at day-to-day development in Test Driven Development manner. Exemplary GitHub project included!
 
 <!--more-->
 
