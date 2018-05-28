@@ -11,6 +11,7 @@ google_analytics: UA-119949005-1
 url: "https://kmotrebski.github.io"
 plugins:
   - jekyll-sitemap
+  - jekyll-feed
 
 #below is "minima" theme customization
 
