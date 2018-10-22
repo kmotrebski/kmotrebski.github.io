@@ -3,4 +3,7 @@ _site/
 .jekyll-metadata
 .idea/
 vendor/
-infra/main.tf
+
+infra/state_cred.ini
+infra/meta.tf
+infra/.terraform
