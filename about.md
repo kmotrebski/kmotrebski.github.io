@@ -18,5 +18,6 @@ You can reach me at:
 
 - [LinkedIn](https://www.linkedin.com/in/konradotrebski/)
 - [GitHub](https://github.com/kmotrebski)
+- [Twitter](https://twitter.com/kmotrebski)
 
 Cheers!
