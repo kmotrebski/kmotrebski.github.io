@@ -20,4 +20,8 @@ You can reach me at:
 - [GitHub](https://github.com/kmotrebski)
 - [Twitter](https://twitter.com/kmotrebski)
 
+## Contact
+
+Use this [contact form](https://docs.google.com/forms/d/e/1FAIpQLSdBpRcUS3F7oktGGlar3zD0ol3GXStyVWD-zLHcSqN_PiWeHg/viewform?usp=sf_link){:target="_blank"}. I will reply as soon as possible, probably hours.
+
 Cheers!
