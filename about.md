@@ -6,6 +6,7 @@ I am a software developer, currently based in [Kraków](https://en.wikipedia.org
 
 ## Interests
 
+- DevOps movement / improving flow of work / Theory of constraints in IT
 - localization software into multiple locales
 - microservices
 - stream processing and event driven architectures e.g. Apache Kafka
