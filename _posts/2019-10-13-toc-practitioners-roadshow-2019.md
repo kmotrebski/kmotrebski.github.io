@@ -4,7 +4,7 @@ date:   2019-10-13 06:00:00 +0200
 excerpt: I’ve visited ToC Practitioners Roadshow 2019, an event dedicated to Theory of constraints. It was organized by ToC+ Institute earlier this month in 5 cities in Poland. I wanted to share my experience after touring Kraków and Warsaw editions.
 ---
 
-![Bin and vistula river](/assets/20191013_toc_roadshow/krk_bin_vistula.jpg)
+![My bin and vistula river](/assets/20191013_toc_roadshow/krk_bin_vistula.jpg)
 <i>October 2019, Kraków Podgórze, Vistula river and Theory-of-constraints-compliant bare metal bin.</i>
 
 I've visited [ToC practitioners roadshow 2019](http://toc.org.pl/roadshow-praktykow-toc-2019/){:target="_blank"} organized by [ToC+ Institute](http://toc.org.pl){:target="_blank"} earlier this month in 5 cities in Poland. I wanted to share my experience after touring Kraków and Warsaw editions. Those who ware absent can start regretting decision not to go. 
@@ -16,7 +16,7 @@ Key takeaways:
 - It's real, Goldratt was right: applying Theory of constraints puts your business on a new level of performance.
 - People are resistant to change, be ready for hard work.
 
-![Bin award](/assets/20191013_toc_roadshow/wwa_kaizenowosc.jpg)
+![Pawel Schmidt opening](/assets/20191013_toc_roadshow/wwa_kaizenowosc.jpg)
 <i>Mr Paweł Schmidt, who knew Mr Goldratt in person, is opening an event in Warsaw.</i>
 
 ## "It's only in the books" argument killed
@@ -29,7 +29,7 @@ This argument gets killed after visiting the roadshow. You can listen to all pre
 
 It's real. First-hand accounts. The world presented in Goldratt's books gets incarnated in all case studies presented. The patterns and mechanics of Theory of constraints are very visible and clear. I mean here e.g. "subordinate everything to the constraint" rule - see list of cases below to see what it does mean in practice. 
 
-![Bin and vistula river](/assets/20191013_toc_roadshow/wwa_interview.jpg)
+![Interview](/assets/20191013_toc_roadshow/wwa_interview.jpg)
 <i>Recording a video with the point expressed above.</i>
 
 ## Broad range of real-world examples
@@ -53,7 +53,7 @@ Speakers ware asked interesting questions, revealing many, sometimes shocking, i
 
 To name a few!
 
-![Nr Narcis presenting](/assets/20191013_toc_roadshow/wwa_narcis.jpg)
+![Mr Narcis Giralt presentation](/assets/20191013_toc_roadshow/wwa_narcis.jpg)
 <i>Mr Narcis Giralt presenting in Warsaw.</i>
 
 #### Case studies list
@@ -67,7 +67,7 @@ To name a few!
 | Huta Ostrowiec | Forge, manufacturing | [Narcis Giralt](https://www.linkedin.com/in/narcis-giralt-vives-260a249/){:target="_blank"} | manufacturing |
 | Burn Treatment Centre <br /> aka "siemianowicka oparzeniówka" | Hospital | Przemysław Strzelec | public sector
 
-![Bin award](/assets/20191013_toc_roadshow/krk_oparzeniowka.jpg)
+![Mr Przemyslaw Strzelec](/assets/20191013_toc_roadshow/krk_oparzeniowka.jpg)
 <i>Mr Przemysław Strzelec presenting in Kraków.</i>
 
 ## Trainings
@@ -114,7 +114,7 @@ Probability works so next day in Warsaw the bin award was given...
 
 ...to me! Brand new in this case. Proud of myself! Not a small one, and I had to take it back to Kraków by train.
 
-![Bin award](/assets/20191013_toc_roadshow/wwa_selfie.jpg)
+![Selfie](/assets/20191013_toc_roadshow/wwa_selfie.jpg)
 <i>Selfie of one of the last attendees leaving the event :)</i>
 
 ## Thanks!
