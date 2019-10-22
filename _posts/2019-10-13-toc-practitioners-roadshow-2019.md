@@ -119,7 +119,7 @@ Probability works so next day in Warsaw the bin award was given...
 
 ## Thanks!
 
-Congratulations to [Paweł Schmidt](https://www.linkedin.com/in/pawelschmidttoc/){:target="_blank"}, [Joanna Katarzyna Drucka-Podbereska](https://www.linkedin.com/in/joanna-katarzyna-drucka-podbereska-586543150/){:target="_blank"} and [Jacek Branas](https://www.linkedin.com/in/jacekbranas/){:target="_blank"} for organizing the roadshow! Great event providing a plenty of value!
+Congratulations to [Paweł Schmidt](https://www.linkedin.com/in/pawelschmidttoc/){:target="_blank"}, [Joanna Katarzyna Drucka-Podbereska](https://www.linkedin.com/in/joanna-katarzyna-drucka-podbereska-586543150/){:target="_blank"} and [Jacek Branas](https://www.linkedin.com/in/jacekbranas/){:target="_blank"} for organizing the roadshow! Great event providing plenty of value!
 
 You should check out those people and their [ToC+ Institute](http://toc.org.pl){:target="_blank"}.
 
@@ -145,6 +145,6 @@ I am currently working an a [blog post series]({% post_url 2019-09-16-constraint
 - My [blog post about kebab places]({% post_url 2019-09-16-constraints-journey %}){:target="_blank"}
 - [The Goal](https://www.amazon.com/Goal-Process-Ongoing-Improvement/dp/0884271951){:target="_blank"} book
 
-## Revisions
+### Revisions
 
 2019-10-22 - grammar and spelling fixed
