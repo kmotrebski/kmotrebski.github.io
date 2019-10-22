@@ -13,16 +13,12 @@ I am a software developer, currently based in [Kraków](https://en.wikipedia.org
 - complex software systems, e.g. Domain Driven Design
 - testing things
 
-## My profiles
-
-You can reach me at:
-
-- [LinkedIn](https://www.linkedin.com/in/konradotrebski/)
-- [GitHub](https://github.com/kmotrebski)
-- [Twitter](https://twitter.com/kmotrebski)
-
 ## Contact
 
-Use this [contact form](https://docs.google.com/forms/d/e/1FAIpQLSdBpRcUS3F7oktGGlar3zD0ol3GXStyVWD-zLHcSqN_PiWeHg/viewform?usp=sf_link){:target="_blank"}. I will reply as soon as possible, probably hours.
+You can reach me on:
 
-Cheers!
+- [LinkedIn](https://www.linkedin.com/in/konradotrebski/){:target="_blank"}
+- [GitHub](https://github.com/kmotrebski){:target="_blank"}
+- [Twitter](https://twitter.com/kmotrebski){:target="_blank"}
+
+You can also write via a [contact form](https://docs.google.com/forms/d/e/1FAIpQLSdBpRcUS3F7oktGGlar3zD0ol3GXStyVWD-zLHcSqN_PiWeHg/viewform?usp=sf_link){:target="_blank"}.
