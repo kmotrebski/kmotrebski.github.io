@@ -1,5 +1,5 @@
 ---
-title:  "Goldratt was right! ToC practitioners roadshow 2019"
+title:  "Goldratt was right! ToC practitioners roadshow 2019 - report"
 date:   2019-10-13 06:00:00 +0200
 excerpt: I’ve visited ToC Practitioners Roadshow 2019, an event dedicated to Theory of constraints. It was organized by ToC+ Institute earlier this month in 5 cities in Poland. I wanted to share my experience after touring Kraków and Warsaw editions.
 ---
