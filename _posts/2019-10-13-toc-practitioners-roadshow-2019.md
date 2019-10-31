@@ -114,8 +114,8 @@ Probability works so next day in Warsaw the bin award was given...
 
 ...to me! Brand new in this case. Proud of myself! Not a small one and I had to take it back to Kraków by train.
 
-![Selfie](/assets/20191013_toc_roadshow/wwa_selfie.jpg)
-<i>Selfie of one of the last attendees leaving the event :)</i>
+![Selfie with Joanna Drucka - Podbereska and one of the last attendees leaving the event](/assets/20191013_toc_roadshow/wwa_selfie.jpg)
+<i>Selfie with Joanna Drucka - Podbereska and one of the last attendees leaving the event :)</i>
 
 ## Thanks!
 
