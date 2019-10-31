@@ -7,7 +7,7 @@ excerpt: I’ve visited ToC Practitioners Roadshow 2019, an event dedicated to T
 ![My bin and vistula river](/assets/20191013_toc_roadshow/krk_bin_vistula.jpg)
 <i>October 2019, Kraków Podgórze, Vistula river and Theory-of-constraints-compliant bare metal bin.</i>
 
-I've visited [ToC practitioners roadshow 2019](http://toc.org.pl/roadshow-praktykow-toc-2019/){:target="_blank"} organized by [ToC+ Institute](http://toc.org.pl){:target="_blank"} earlier this month in 5 cities in Poland. I wanted to share my experience after touring Kraków and Warsaw editions. Those who ware absent can start regretting the decision not to go. 
+I've visited [ToC practitioners roadshow 2019](http://toc.org.pl/roadshow-praktykow-toc-2019/){:target="_blank"} organized by [ToC+ Institute](http://toc.org.pl){:target="_blank"} earlier this month in 5 cities in Poland. I wanted to share my experience after touring Kraków and Warsaw editions. Those who were absent can start regretting the decision not to go. 
 
 ## TL;DR
 
@@ -40,7 +40,7 @@ It was extremely helpful to see a very broad scope of ToC applications. I've lis
 
 #### Insights and stories
 
-Speakers ware asked interesting questions, revealing many, sometimes shocking, insights about the process of applying Theory of constraints:
+Speakers were asked interesting questions, revealing many, sometimes shocking, insights about the process of applying Theory of constraints:
 
 - **salesman -> blue-collar** - company owner convincing top salesman to become a manual worker and to work in the constraint - awesome case!
 - **vandalism and threats** - colleagues destroyed one employee's locker as a threat and "advice" not to cooperate with company management.
@@ -103,7 +103,7 @@ Despite the issue above, The Roadshow was an unquestionably very beneficial netw
 
 ## Fun
 
-There ware a lot of funny situations during the event. Both in the networking area and on the stage. My favourite was a business card draw. One of the awards was real bare metal indoor bin! It is special as it was produced in the factory managed by Wojciech Maziarz who successfully applied ToC in sales. 
+There were a lot of funny situations during the event. Both in the networking area and on the stage. My favourite was a business card draw. One of the awards was real bare metal indoor bin! It is special as it was produced in the factory managed by Wojciech Maziarz who successfully applied ToC in sales. 
 
 In Kraków edition, the man collecting gifts confused gadgets and took a normal bin from the corridor - together with garbage inside! It has happened as all the bins in the hotel was from the very same factory! It was discovered quite late - when the gift was being handed to the winner :)
 
