@@ -4,5 +4,10 @@ sitemap: false
 permalink: /codetecon
 ---
 
-Page dedicated my presentation delivered on CodeteCON 2019 in Kraków.
+# CodeteCON 2019, Kraków
 
+Page dedicated my presentation delivered during CodeteCON 2019 in Kraków.
+
+### Slides
+
+Slides will be available here soon.
