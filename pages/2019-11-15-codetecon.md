@@ -4,8 +4,8 @@ sitemap: false
 permalink: /codetecon
 ---
 
-{% assign ko_g_slides = "https://onet.pl" %}
-{% assign ko_pdf_slides = "/assets/201911_toc/codetecon2019_otrebski.txt" %}
+{% assign ko_g_slides = "https://docs.google.com/presentation/d/1QcRCM4zFNMcua02N0LrK0Iu9ftbGmR9Mj94vdNUQR7U/edit?usp=sharing" %}
+{% assign ko_pdf_slides = "/assets/201911_toc/CodeteCON_otrebski_final.pdf" %}
 {% assign ko_joind_url = null %}
 
 ## Slides
