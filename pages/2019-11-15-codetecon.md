@@ -18,11 +18,9 @@ permalink: /codetecon
 
 If you would like to have a lunch and speak about ToC or DevOps contact me on [LinkedIn](https://www.linkedin.com/in/konradotrebski/){:target="_blank"}! 
 
-We can visit Besef too - unfortunately it's in Warsaw! :) 
+We can go and visit Besef too (it's in Warsaw)! 
 
-{% if ko_joind_url == null %}
+{% if ko_joind_url != null %}
 ## Feedback
-Please leave me feedback in person or on [LinkedIn](https://www.linkedin.com/in/konradotrebski/){:target="_blank"}!
-{% else %}
-Please leave me feedback in person or on [Joind (URL to my talk)]({{ko_joind_url}}){:target="_blank"}! Or both! :)
+Please leave me feedback in person or on [Joind (URL to my talk in new tab)]({{ko_joind_url}}){:target="_blank"}! Or both! :)
 {% endif %}
