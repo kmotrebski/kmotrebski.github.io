@@ -26,3 +26,7 @@ Please leave me feedback in person or on [LinkedIn](https://www.linkedin.com/in/
 {% else %}
 Please leave me feedback in person or on [Joind (URL to my talk)]({{ko_joind_url}}){:target="_blank"}! Or both! :)
 {% endif %}
+
+## Join my team!
+
+[https://careers.tagvenue.com](https://careers.tagvenue.com){:target="_blank"} - we are looking for backend developers (any language)!!
